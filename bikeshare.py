@@ -39,7 +39,8 @@ def get_filters():
     while city not in CITY_DATA: 
         city = input('\nFrom what city would you like statistics: Chicago, Washington or NYC?\n')
         city = city.lower()
-
+    
+    # see if filter is needed
     while time_filter  not in ['month', 'day', 'both', 'none']:
         time_filter = input('\nWould you like to filter the data by month, day, both, or none?\n')
         time_filter = time_filter.lower()
