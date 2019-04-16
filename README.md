@@ -5,7 +5,7 @@
 Ivanna's GitHub Project
 
 ### Description
-Describe what your project is about and what it does
+This project is an example of using GitHub.
 
 ### Files used
 Include the files used
