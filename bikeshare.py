@@ -217,8 +217,9 @@ def raw_data(df):
     Args: 
        (pd.DataFrame) df - city data  
     """
-    for i, r in df.iterrows():
-        if i % 5 == 0:
+    for i, r in df.iterrows(): 
+        # ask question every 5th time
+        if i % 5 == 0: 
             response = ''
             while response not in ['yes', 'no']:
                 response = input('\nWould you like to see detailed user data?')
