@@ -35,7 +35,7 @@ def get_filters():
     month = "all"
     day = "all"
      
-    # keep asking until correct answer given
+    # ask for city
     while city not in CITY_DATA: 
         city = input('\nFrom what city would you like statistics: Chicago, Washington or NYC?\n')
         city = city.lower()
@@ -52,8 +52,7 @@ def get_filters():
             month = month.lower()
     if time_filter == 'day' or time_filter == 'both': 
         while day not in DAYS: 
-            day = input('\nWhat day (Mon, Tue, Wed, Thu, Fri, Sat, Sun)?\n')
-            day = day.lower()
+            day = input('\nWhat day (Mon, Tue, Wed, Thu, Fri, Sat, Sun)?\n').lower()          
                
     print('-'*40)
     return city, month, day
